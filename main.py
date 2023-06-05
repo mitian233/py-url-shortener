@@ -11,21 +11,6 @@ collection = db[os.getenv('MONGO_COLLECTION')]
 url_length = int(os.getenv('URL_LENGTH'))
 site_url = os.getenv('SITE_URL')
 
-def main():
-    """
-    document = {
-        "name": "John",
-        "age": 25,
-        "email": "john@example.com"
-    }
-    result = collection.insert_one(document)
-    print("插入的文档ID：", result.inserted_id)
-
-    find_result = collection.find_one({"name": "John"})
-    print("查询结果：", find_result)
-    """
-    shortened = create_shortened_url("https://www.baidu.com/")
-    print(shortened)
 
 def create_shortened_url(url, defined_shortened_url=None):
     if defined_shortened_url is not None:
@@ -67,6 +52,3 @@ def get_original_url(shortened_url):
         return exist_data["url"]
     else:
         return None
-
-if __name__ == '__main__':
-    main()

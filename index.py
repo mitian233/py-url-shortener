@@ -1,18 +1,12 @@
 from flask import Flask, abort, render_template, request, redirect
-import pymongo
 import os
 from dotenv import load_dotenv
 import main as main
 
 load_dotenv()
+site_url = os.getenv('SITE_URL')
 
 app = Flask(__name__)
-
-client = pymongo.MongoClient(os.getenv('MONGO_URL'))
-db = client[os.getenv('MONGO_DB')]
-collection = db[os.getenv('MONGO_COLLECTION')]
-url_length = int(os.getenv('URL_LENGTH'))
-site_url = os.getenv('SITE_URL')
 
 @app.route('/')
 def hello_world():  # put application's code here
