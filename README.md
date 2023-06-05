@@ -1,4 +1,4 @@
-![py-url-shortener](https://socialify.git.ci/mitian233/py-url-shortener/image?description=1&language=1&name=1&owner=1&stargazers=1&theme=Light)
+![py-url-shortener](https://socialify.git.ci/mitian233/py-url-shortener/image?description=1&forks=1&issues=1&language=1&logo=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F13678847&name=1&owner=1&pattern=Charlie%20Brown&pulls=1&stargazers=1&theme=Light)
 
 [日本語](https://github.com/mitian233/py-url-shortener/blob/master/README_ja.md)
 
