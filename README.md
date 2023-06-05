@@ -56,4 +56,4 @@ Following the introduction of the environment variables descriped above and edit
 
 **⚠️Once you change the environment variables, you need to redeploy your project!**
 
-Live demo: https://s.mikan.ac.cn/NmPlq
+Live demo: https://py-url-shortener.vercel.app/

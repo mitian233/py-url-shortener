@@ -55,4 +55,4 @@ Nginx などのリバースプロキシを設定して、リクエストをサ�
 
 **⚠️毎度環境変数が変更された場合、Vercel ダッシュボードで再デプロイすることが必要です。**
 
-Live demo: https://s.mikan.ac.cn/NmPlq
+Live demo: https://py-url-shortener.vercel.app/
