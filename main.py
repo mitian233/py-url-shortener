@@ -52,3 +52,13 @@ def get_original_url(shortened_url):
         return exist_data["url"]
     else:
         return None
+
+def format_url(site_url):
+    if site_url == '':
+        site_url = ''
+    else:
+        if site_url[-1] != '/':
+            site_url += '/'
+        if site_url[0:7] != 'http://' and site_url[0:8] != 'https://':
+            site_url = 'https://' + site_url
+    return site_url
