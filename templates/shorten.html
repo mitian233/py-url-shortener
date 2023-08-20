@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=400, initial-scale=1.0">
     <title>Result page</title>
+    <script type="text/javascript">
+        function copyToClipboard(text) {
+            var dummy = document.createElement("textarea");
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand("copy");
+            document.body.removeChild(dummy);
+        }
+    </script>
 </head>
 <body>
 <div>
     <h1>Result</h1>
-    <a href="{{ site_url }}{{ shorten }}">{{ site_url }}{{ shorten }}</a>
+    <div>
+        <a href="{{ site_url }}{{ shorten }}" style="display: inline">{{ site_url }}{{ shorten }}</a>
+        <button style="display: inline" onclick="copyToClipboard('{{ site_url }}{{ shorten }}')">Copy</button>
+    </div>
     <br/>
     <a href="/">Back to homepage</a>
 </div>
